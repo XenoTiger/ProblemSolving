@@ -7,9 +7,9 @@ public class ShiftAllOnesToLeft {
         for (int mid = 0; mid < arr.length; mid++) {
             if (arr[mid] == 1) {
                 // Swap arr[low] and arr[mid]
-                int temp = arr[low];
-                arr[low] = arr[mid];
-                arr[mid] = temp;
+                int temp = arr[mid];
+                arr[mid] = arr[low];
+                arr[low] = temp;
                 low++;
             }
         }
